@@ -1,0 +1,15 @@
+.item{
+    padding: 15px 25px;
+    text-align: start;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    gap: 10px;
+}
+
+.item:hover{
+    background-color: whitesmoke;
+    color: #7386D7;
+    cursor: pointer;
+}

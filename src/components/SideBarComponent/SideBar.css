@@ -1,0 +1,36 @@
+aside {
+  /* width: 300px; */
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #7386d7;
+  color: white;
+  float: left;
+}
+
+.sidebar-text {
+  text-align: start;
+  padding: 5px 25px;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  aside {
+    height: auto;
+    float: none;
+    width: 100%;
+  }
+
+  .img-container{
+    width: 100%;
+    margin: auto;
+  }
+
+  .img-container img{
+    max-width: 100%;
+  }
+
+  .myImg{
+    transform: none;
+  }
+}
+

@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import SideBar from './components/SideBarComponent/SideBar';
+import Main from './components/MainComponent/Main';
+import { HOME } from './constants/actionTypes';
 
 function App() {
+  const [currentMainComponent, setCurrentMainComponent] = useState(HOME);
+
+  const handleSideBarItemClick = (mainComponent) => {
+    setCurrentMainComponent(mainComponent);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SideBar onSideBarItemClick={handleSideBarItemClick} />
+      <Main currentMainComponent={currentMainComponent} />
     </div>
   );
 }
