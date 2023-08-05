@@ -13,7 +13,6 @@ export default function SideBar({ onSideBarItemClick }) {
       <SideBarHeader text="Bootstrap SideBar" />
 
       <h1 className="sidebar-text">Dummy Heading</h1>
-
       <SideBarItem
         icon={<AiFillHome />}
         text="Home"
